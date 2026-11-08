@@ -1,0 +1,8 @@
+{
+  "v": 1,
+  "key_id": "ingest",
+  "ts": 1788715800,
+  "event_id": "event-0001",
+  "body": "{\"name\":\"تجربة\"}",
+  "signature": "2da69c387e660892d167f694c5fe1ee87f9ae6e1424f45d82587cd38ab10c373"
+}

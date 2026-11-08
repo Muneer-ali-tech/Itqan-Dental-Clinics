@@ -1,0 +1,6 @@
+.env
+.env.*
+!.env.example
+*.secret
+live-examples*/
+__pycache__/

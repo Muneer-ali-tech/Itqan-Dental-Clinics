@@ -1,0 +1,247 @@
+{
+  "environment": "Node v24.13.1",
+  "scope": "Actual .gs files, mocked Google services",
+  "live_google_tested": false,
+  "live_email_tested": false,
+  "total": 59,
+  "passed": 59,
+  "failed": 0,
+  "results": [
+    {
+      "name": "valid signed Arabic request saved with pending receipt",
+      "status": "PASS"
+    },
+    {
+      "name": "same event retry does not duplicate request or job",
+      "status": "PASS"
+    },
+    {
+      "name": "same event different payload rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "same event reused for another request rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "same request new create event rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "bad signature rejected before save",
+      "status": "PASS"
+    },
+    {
+      "name": "stale signature rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "future signature rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "malformed JSON rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "signed malformed inner JSON rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "oversized input rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown fields rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "non-test request rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "email outside allowlist rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "multiple recipient email injection rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "consent boolean string rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "service consent absent rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "old consent rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "incomplete without followup consent rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "date without offset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "impossible calendar date rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "past preferred time rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "ingest key cannot confirm",
+      "status": "PASS"
+    },
+    {
+      "name": "admin key cannot create intake",
+      "status": "PASS"
+    },
+    {
+      "name": "version conflict prevents stale updates",
+      "status": "PASS"
+    },
+    {
+      "name": "completion cancels incomplete followup",
+      "status": "PASS"
+    },
+    {
+      "name": "recorded reply stops followup",
+      "status": "PASS"
+    },
+    {
+      "name": "confirmation queues reminder from trusted operator",
+      "status": "PASS"
+    },
+    {
+      "name": "cancel before due prevents all emails",
+      "status": "PASS"
+    },
+    {
+      "name": "reschedule invalidates old reminder revision",
+      "status": "PASS"
+    },
+    {
+      "name": "change request pauses reminder without confirming new time",
+      "status": "PASS"
+    },
+    {
+      "name": "attendance cancels reminders and queues neutral review",
+      "status": "PASS"
+    },
+    {
+      "name": "review consent false prevents review invitation",
+      "status": "PASS"
+    },
+    {
+      "name": "no-show cancels all pending jobs",
+      "status": "PASS"
+    },
+    {
+      "name": "cannot confirm cancelled request",
+      "status": "PASS"
+    },
+    {
+      "name": "global opt-out cancels other records with same email at worker check",
+      "status": "PASS"
+    },
+    {
+      "name": "global opt-out blocks future intake for same address",
+      "status": "PASS"
+    },
+    {
+      "name": "pause prevents sending without deleting pending job",
+      "status": "PASS"
+    },
+    {
+      "name": "dry run is simulated not sent and is not replayed after mode switch",
+      "status": "PASS"
+    },
+    {
+      "name": "successful MailApp call records SENT only once",
+      "status": "PASS"
+    },
+    {
+      "name": "exhausted quota defers without claiming sent",
+      "status": "PASS"
+    },
+    {
+      "name": "uncertain MailApp exception is UNKNOWN and never auto-retried",
+      "status": "PASS"
+    },
+    {
+      "name": "crash after send before save recovers UNKNOWN without resend",
+      "status": "PASS"
+    },
+    {
+      "name": "failure saving SENDING intent does not contact provider",
+      "status": "PASS"
+    },
+    {
+      "name": "request committed but flush response fails: retry is duplicate",
+      "status": "PASS"
+    },
+    {
+      "name": "busy lock produces retryable response",
+      "status": "PASS"
+    },
+    {
+      "name": "late reminder expires instead of sending",
+      "status": "PASS"
+    },
+    {
+      "name": "normal clock skips past 24-hour reminder for near appointment",
+      "status": "PASS"
+    },
+    {
+      "name": "normal clock respects quiet hours",
+      "status": "PASS"
+    },
+    {
+      "name": "sheet view escapes formula-like test name",
+      "status": "PASS"
+    },
+    {
+      "name": "dashboard counts unique requests not replayed events",
+      "status": "PASS"
+    },
+    {
+      "name": "get returns no email or name",
+      "status": "PASS"
+    },
+    {
+      "name": "health is liveness only and exposes no secrets",
+      "status": "PASS"
+    },
+    {
+      "name": "preflight validates config and installer is idempotent",
+      "status": "PASS"
+    },
+    {
+      "name": "non-demo setting fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "same ingest/admin key is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "corrupt canonical storage fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "terminal close cancels review and other queued tasks",
+      "status": "PASS"
+    },
+    {
+      "name": "signature matches independent RFC 4231 vector",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "environment": "Node v24.13.1",
+  "scope": "Sender server + client against a local HMAC-verified mock /exec",
+  "live_google_tested": false,
+  "live_email_tested": false,
+  "total": 27,
+  "passed": 27,
+  "failed": 0,
+  "results": [
+    {
+      "name": "HMAC primitive matches the RFC 4231 test vector",
+      "status": "PASS"
+    },
+    {
+      "name": "envelope matches the Python tool construction byte-for-byte",
+      "status": "PASS"
+    },
+    {
+      "name": "response loss after save: retry keeps body/event_id and gets duplicate",
+      "status": "PASS"
+    },
+    {
+      "name": "sustained network failure: exactly 3 attempts, then unconfirmed",
+      "status": "PASS"
+    },
+    {
+      "name": "BUSY is retried on the same event and then accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "STALE_SIGNATURE triggers a re-signed retry of the same event",
+      "status": "PASS"
+    },
+    {
+      "name": "HTML login page is never treated as success and is not retried",
+      "status": "PASS"
+    },
+    {
+      "name": "ingest key cannot confirm: FORBIDDEN_EVENT refused without retries",
+      "status": "PASS"
+    },
+    {
+      "name": "mismatched request_id in an ok:true response is refused",
+      "status": "PASS"
+    },
+    {
+      "name": "health reports configuration without leaking secrets",
+      "status": "PASS"
+    },
+    {
+      "name": "start sends a signed INCOMPLETE create with phone and exact consent",
+      "status": "PASS"
+    },
+    {
+      "name": "second start is idempotent and creates no second event",
+      "status": "PASS"
+    },
+    {
+      "name": "complete sends request.complete with expected_version and reaches SUBMITTED",
+      "status": "PASS"
+    },
+    {
+      "name": "double submit replays the stored result without a second event",
+      "status": "PASS"
+    },
+    {
+      "name": "no follow-up consent: single SUBMITTED create at the end",
+      "status": "PASS"
+    },
+    {
+      "name": "status uses request.get bound to the session only",
+      "status": "PASS"
+    },
+    {
+      "name": "unconfirmed create is settled by the same event before completing",
+      "status": "PASS"
+    },
+    {
+      "name": "VERSION_CONFLICT reads authoritative state then allows a fresh decision",
+      "status": "PASS"
+    },
+    {
+      "name": "validation rejects bad fields before any event is signed",
+      "status": "PASS"
+    },
+    {
+      "name": "past preferred time is rejected with a clear code",
+      "status": "PASS"
+    },
+    {
+      "name": "reset refuses while an event is unconfirmed",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown origin is rejected; no-origin clients still work",
+      "status": "PASS"
+    },
+    {
+      "name": "rate limit returns 429 after the configured budget",
+      "status": "PASS"
+    },
+    {
+      "name": "static site is served from dist with SPA fallback; unknown API is 404",
+      "status": "PASS"
+    },
+    {
+      "name": "no API response ever contains the ingest secret",
+      "status": "PASS"
+    },
+    {
+      "name": "frontend never references VITE_-prefixed secrets",
+      "status": "PASS"
+    },
+    {
+      "name": "built bundle (when present) does not contain the ingest secret",
+      "status": "PASS"
+    }
+  ]
+}
